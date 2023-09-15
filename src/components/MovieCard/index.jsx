@@ -4,7 +4,6 @@ import Fav from '../../assets/images/Favorite.png'
 
 
 export default function index({ movie }) {
-  console.log(movie)
 
   const genre = "Actions, Adventures, fiction"
 

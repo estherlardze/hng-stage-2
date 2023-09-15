@@ -19,7 +19,7 @@ export default function index() {
         </p>
 
         <button className="flex flex-row items-center gap-3 bg-rose-700 py-[6px] px-[16px]
-        rounded-md cursor-pointer">
+        rounded-md cursor-pointer mt-[20px]">
             <img src={playIcon} alt="play" />
             <span className="font-bold text-sm leading-[24px] text-white ">WATCH TRAILER</span>
         </button>
