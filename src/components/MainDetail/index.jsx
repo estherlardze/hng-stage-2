@@ -35,15 +35,18 @@ export default function MainDetail({movie}){
               <p className='font-bold text-xl' data-testid="movie-title">{movie?.title}</p>
               <p data-testid="movie-runtime" className='mt-1'>{formatRuntime()}</p>
               
-              {/* {movie &&
-                movie?.genres.length > 0 ? movie?.genres.map((genre) => (
-                <button className="text-red-500 border border-solid border-gray-300 rounded-xl px-2" key={genre.id} >
-                  {genre.name}
-                </button>))
-                 :<button className="text-red-500 border border-solid border-gray-300 rounded-xl px-2" key={genre.id} >
-                {genre.name}
-              </button>
-              }  */}
+                {movie &&
+                 movie?.genres?.length > 0 ? console.log(movie?.genres) 
+                  : ''
+                  // <button className="text-red-500 border border-solid border-gray-300 rounded-xl px-2" key={genre.id} >
+                //   {genre?.name}
+                // </button>)
+                 // 
+                //    :<button className="text-red-500 border border-solid border-gray-300 rounded-xl px-2" key={genre.id} >
+                //   {genre?.name}
+                // </button>
+              }    
+
               <div className='flex items-center gap-3 sm:ml-[30%]'>
               <img src={Star} alt="" style={{ width: '18px', height: '18px' }} />
               <p>{movie?.vote_average}</p>
