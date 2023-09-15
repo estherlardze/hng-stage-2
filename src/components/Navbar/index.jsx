@@ -22,7 +22,7 @@ export default function index() {
         />
 
         <div className="flex flex-row gap-5">
-            <div className="text-base text-white leading-6 ml-2">Sign in</div>
+            <div className="text-base text-white leading-6 ml-2 hidden sm:block">Sign in</div>
             <img src={Menu} alt="menu" className="bg-red-600 border-50 rounded-full w-[24px] h-[24px] hidden md:flex"/>
         </div>
     </nav>

@@ -36,7 +36,7 @@ export default function index({ searchTerm, setSearchTerm }) {
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
           className="w-full bg-transparent focus:border-none focus:outline-none text-white
-            placeholder:text-base placeholder:font-normal placeholder:text-white"
+            placeholder:text-base placeholder:font-normal placeholder:text-white mx-[15px]"
           placeholder="What do you want to watch?"
         />
         <img src={searchIcon} className=" w-[16px] h-[16px]"/>
