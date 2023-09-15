@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  background-image: url("./assets/images/Poster.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.card{
+  background-color: rgba(0, 0, 0, 0.06);
+  height: 500px;
+}
+.card-hover:hover{
+ background-color: rgb(241, 166, 166);
+ 
+ border-right: 4px solid rgb(180, 57, 57);
+ cursor: pointer;
+ 
+}
+.favorite:hover{
+ transform: scale(1.1);
+}
