@@ -1,6 +1,9 @@
 
 export default function index() {
   return (
-    <div>Oops, not your fault!</div>
+    <div>
+    <h2>Page Not Found</h2>
+    <p>The requested page does not exist.</p>
+  </div>
   )
 }

@@ -1,7 +1,9 @@
 import React from 'react';
-import {toprated, trailer, show, more, related, Star} from '../../assets/index'
+import {toprated, trailer, show, more, related, Star} from '../../assets/index';
+import ReactPlayer from 'react-player';
+import YouTube from 'react-youtube';
 
-export default function MainDetail({movie}){
+export default function MainDetail({movie, movie_Id, trailerKey}){
     console.log(movie)
     
     const localeDateString = movie?.release_date
@@ -27,28 +29,26 @@ export default function MainDetail({movie}){
     }
 
     return(
-        <div className='ml-4 mt-2'>
-          <img src={trailer} alt="" 
-           className='w-[98%] h-[50%] rounded-md'/>
+        <div className='ml-[20px] mt-2'>
+           <YouTube videoId={trailerKey}/>
 
            <div className='my-2 flex gap-4'>
               <p className='font-bold text-xl' data-testid="movie-title">{movie?.title}</p>
               <p data-testid="movie-runtime" className='mt-1'>{formatRuntime()}</p>
               
                 {movie &&
-                 movie?.genres?.length > 0 ? console.log(movie?.genres) 
-                  : ''
-                  // <button className="text-red-500 border border-solid border-gray-300 rounded-xl px-2" key={genre.id} >
-                //   {genre?.name}
-                // </button>)
-                 // 
-                //    :<button className="text-red-500 border border-solid border-gray-300 rounded-xl px-2" key={genre.id} >
-                //   {genre?.name}
-                // </button>
+                <>
+                  <button className="text-red-500 border border-solid border-gray-300 rounded-xl px-2" >
+                     {movie?.genres?.[0].name}
+                  </button>
+                  <button className="text-red-500 border border-solid border-gray-300 rounded-xl px-2" >
+                    {movie?.genres?.[1].name}
+                  </button>
+                </>  
               }    
 
-              <div className='flex items-center gap-3 sm:ml-[30%]'>
-              <img src={Star} alt="" style={{ width: '18px', height: '18px' }} />
+              <div className='sm:flex items-center gap-3 sm:ml-[30%] hidden'>
+              <img src={Star} alt="star" style={{ width: '18px', height: '18px' }} />
               <p>{movie?.vote_average}</p>
               </div>
              
