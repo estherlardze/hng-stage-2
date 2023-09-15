@@ -28,7 +28,7 @@ export default function index(){
     ]
 
     return(
-     <div className='w-[50px] sm:w-[196px] h-[auto] border border-2 shadow-md py-4 rounded-tr-[50px] rounded-br-[50px] '>
+     <div className='w-[50px] md:w-[230px] h-[auto] border border-2 shadow-md py-4 rounded-tr-[50px] rounded-br-[50px] relative'>
       <div className='flex gap-4 mb-[30px] mt-[20px]'>
          <img src={tv} alt="tv" className='w-[30px] h-[30px]' />
          <h4 className='font-bold hidden sm:flex'>Movie Box</h4>
@@ -45,7 +45,7 @@ export default function index(){
           <button className='text-red-700 bg-red-200 text-xs rounded-xl py-1 px-2'>Start playing</button>
         </div>
 
-        <div className='flex gap-4 mt-[70px]'>
+        <div className='flex gap-4 absolute bottom-[20px]'>
          <HiOutlineLogout size={22} />
          <p className='font-semibold text-[#30302f] text-2xlg hidden sm:flex'>Logout</p>
         </div>

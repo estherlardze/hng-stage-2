@@ -24,3 +24,6 @@
  border-right: 4px solid rgb(180, 57, 57);
  
 }
+.favorite:hover{
+ transform: scale(1.1);
+}

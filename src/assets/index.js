@@ -15,3 +15,5 @@ export { default as trailer } from "./images/trailer.png"
 export {default as show} from './images/show.png' 
 export {default as more} from './images/more.png'
 export {default as related} from './images/related.png' 
+export {default as Star} from './images/Star.png' 
+

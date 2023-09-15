@@ -10,22 +10,22 @@ export default function index({ searchTerm, setSearchTerm }) {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
 
-  useEffect(() => {
-    const apiKey = "6d4571647e555bda7f37c0dd98c01206"
-    const apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchedMovies}`;
+  // useEffect(() => {
+  //   const apiKey = "6d4571647e555bda7f37c0dd98c01206"
+  //   const apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchedMovies}`;
 
-  fetch(apiUrl)
-  .then(response => response.json())
-    .then(response => { setSearchedMovies(response)
-      console.log(searchedMovies)
+  // fetch(apiUrl)
+  // .then(response => response.json())
+  //   .then(response => { setSearchedMovies(response)
+  //     console.log(searchedMovies)
 
-      setIsLoading(false)
-      setSearchTerm("")
-    })
+  //     setIsLoading(false)
+  //     setSearchTerm("")
+  //   })
     
-    .catch(err => setError(err))
+  //   .catch(err => setError(err))
   
-  }, [searchTerm])
+  // }, [searchTerm])
 
   return (
     <div 

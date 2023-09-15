@@ -1,8 +1,17 @@
-# React + Vite
+A movie discovery web application that allows users to search for movies, view details about them, and save their favorite movies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Technologies
+React.js, Tailwind-css and TMDB API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How to Use
+clone this repository to your local machine using the following command:
+git clone https://github.com/estherlardze/hng-stage-2.git
+
+Navigate to the project directory and install the required dependencies using yarn:
+cd hng-stage-2
+yarn install
+
+Subscribe to TMDB api and get your api key Once the dependencies and API key are set up, start the development server:
+
+yarn dev
