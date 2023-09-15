@@ -28,7 +28,7 @@ export default function index(){
     ]
 
     return(
-     <div className='w-[50px] md:w-[330px] h-[auto] border border-2 shadow-md py-4 rounded-tr-[50px] rounded-br-[50px] relative mr-[50px]'>
+     <div className='hidden sm:w-[50px] md:w-[330px] h-[auto] border border-2 shadow-md py-4 rounded-tr-[50px] rounded-br-[50px] relative mr-[50px]'>
       <div className='flex gap-4 mb-[30px] mt-[20px]'>
          <img src={tv} alt="tv" className='w-[30px] h-[30px]' />
          <h4 className='font-bold hidden md:flex'>Movie Box</h4>

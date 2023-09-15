@@ -28,8 +28,9 @@ export default function MainDetail({movie, trailerKey}){
     }
 
     return(
-        <div className='ml-[30px] my-4 '>
-           <YouTube videoId={trailerKey} className="player"/>
+        <div className='ml-[10px] my-4 '>
+           {/* <YouTube videoId={trailerKey} className="player"/> */}
+           <img src={trailer} alt="trailer" />
 
            <div className='my-[20px] flex gap-4'>
               <p className='font-bold text-xl' data-testid="movie-title">{movie?.title}</p>
@@ -53,9 +54,9 @@ export default function MainDetail({movie, trailerKey}){
              
             </div>
     
-           <div className=''>
+           <div >
             <div className='w-[100%] md:w-[90%]'>
-              <p data-testid="movie-overview">{movie?.overview}</p>
+              <p data-testid="movie-overview flex flex-wrap">{movie?.overview}</p>
               <p className='font-bold text-xl mt-[20px]' data-testid="movie-release-date">Release Date: <span className='text-red-700'>{newDate}</span></p>
               <p className='font-bold text-xl mt-[20px]'>Popularity: <span className='text-red-700'>{movie?.popularity}</span></p>
               <p className='font-bold text-xl mt-[20px]'>Production Companies: <span className='text-red-700'>{movie?.production_companies?.[0].name}</span></p>
