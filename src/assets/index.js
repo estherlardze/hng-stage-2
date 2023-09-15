@@ -10,3 +10,8 @@ export { default as ChevronRight } from "./images/ChevronRight.png"
 export { default as Favorite } from "./images/Favorite.png"
 export { default as TvSeries } from "./images/TvSeries.png"
 export { default as Movie_Image } from "./images/Movie_Image.png"
+export { default as toprated } from "./images/toprated.png"
+export { default as trailer } from "./images/trailer.png"
+export {default as show} from './images/show.png' 
+export {default as more} from './images/more.png'
+export {default as related} from './images/related.png' 

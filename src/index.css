@@ -14,3 +14,13 @@
   background-size: cover;
   background-position: center;
 }
+.card{
+  background-color: rgba(0, 0, 0, 0.06);
+  height: 500px;
+}
+.card-hover:hover{
+ background-color: rgb(241, 166, 166);
+ padding: 15px 10px;
+ border-right: 4px solid rgb(180, 57, 57);
+ 
+}

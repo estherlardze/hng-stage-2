@@ -10,11 +10,12 @@ export default function Footer(){
             <AiOutlineTwitter size={27} className="cursor-pointer"/>
             <AiFillYoutube size={27} className="cursor-pointer"/>
           </div>
-            <div className='flex gap-6 items-center justify-center flex-col sm:flex-row'>
-            <p>Conditions to use</p>
-            <p>Privacy & Policy</p>
-            <p>Rest Room</p>
+            <div className='flex gap-6 items-center justify-center flex-col sm:flex-row mb-[20px]'>
+            <p className='font-semibold'>Conditions to use</p>
+            <p className='font-semibold'>Privacy & Policy</p>
+            <p className='font-semibold'>Rest Room</p>
             </div>
+            <p className='text-center text-[gray]'>© 2021 MovieBox by Adriana Eka Prayudha</p>
            
         </div>
     )
