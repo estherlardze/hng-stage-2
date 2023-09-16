@@ -9,4 +9,4 @@ export { default as Error } from "./Error"
 export { default as MovieDetail } from "./MovieDetail"
 export { default as Footer } from "./Footer";
 export { default as Sidebar } from "./Sidebar";
-//export {default as MainDetail} from "./MainDetail";
+export {default as MainDetail} from "./MainDetail";

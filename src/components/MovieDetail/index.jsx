@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import { Sidebar} from ".."
+import { Sidebar, MainDetail} from ".."
 
 export default function index() {
    const[movie, setMovie] = useState([])

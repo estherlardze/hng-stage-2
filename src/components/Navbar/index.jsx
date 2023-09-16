@@ -14,7 +14,7 @@ export default function index() {
     >
         <div className="flex flex-row items-left md:items-centergap-6 mr-auto">
             <img src={Tv} alt="tv" className="w-[50px]"/>
-            <div className="text-white font-bold text-xl leading-6 hidden md:flex ml-3">MovieBox</div>
+            <div className="text-white font-bold text-xl leading-6 hidden md:flex ml-3 mt-3">MovieBox</div>
         </div>
         <Search 
             setSearchTerm={setSearchTerm}
