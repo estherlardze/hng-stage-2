@@ -34,7 +34,7 @@ export default function index(){
          <h4 className='font-bold hidden md:flex'>Movie Box</h4>
       </div>
         {data.map((item) => (
-            <div className='flex gap-4 py-[15px] px-[10px] card-hover'>
+            <div className='flex gap-4 py-[15px] px-[10px] card-hover' key={item.name}>
                <p className='text-[#30302f] '>{item.icon}</p>
                <p className='font-semibold text-[#30302f] text-2xlg hidden md:flex'>{item.name}</p>
             </div>

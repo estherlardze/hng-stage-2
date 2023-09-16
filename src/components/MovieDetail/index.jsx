@@ -32,7 +32,7 @@ export default function index() {
   
 
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
         <Sidebar />
         <MainDetail movie={movie} movie_Id={movie_Id} trailerKey={trailerKey} />
     </div>

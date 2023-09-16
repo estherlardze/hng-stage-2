@@ -9,23 +9,8 @@ export default function MainDetail({movie, trailerKey}){
     const localDate = new Date(localeDateString);
     const newDate = localDate.toUTCString()
 
-    const formatRuntime = () => {
-     const runtime = movie?.runtime
-     let hours;
-     let remainingMinutes;
-     let totalTime;
 
-     if(runtime > 60){
-       hours = Math.floor(runtime / 60) + 'h';
-       remainingMinutes = runtime % 60 + 'm';
-       totalTime = hours + " " + remainingMinutes;
-     }
-     else{
-      totalTime = runtime + 'm'
-     }
-
-     return totalTime;
-    }
+  const runtime = movie?.runtime + 'm'
 
     return(
         <div className='ml-[10px] my-4 '>
@@ -34,7 +19,7 @@ export default function MainDetail({movie, trailerKey}){
 
            <div className='my-[20px] flex gap-4'>
               <p className='font-bold text-xl' data-testid="movie-title">{movie?.title}</p>
-              <p data-testid="movie-runtime" className='mt-1'>{formatRuntime()}</p>
+              <p data-testid="movie-runtime" className='mt-1'>{runtime}</p>
 
                 {movie &&
                 <>
